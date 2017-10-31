@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+	link(href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|PT+Sans+Narrow|Rubik" rel="stylesheet")
+
+	//- Bootstrap CSS
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+
+	link(rel="stylesheet", href="css/main.css")
+
+
+	title Налоги
+body
+	nav.navbar.navbar-default.fixed(role='navigation')
+		.container-fluid
+			// Brand and toggle get grouped for better mobile display
+			.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href='index.html')
+					img(src="", alt="Логотип")
+			// Collect the nav links, forms, and other content for toggling
+			#bs-example-navbar-collapse-1.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li
+						a(href="#top") Главная
+					li
+						a(href="#services") Услуги
+					li 
+						a(href="#contacts") Контакты
+					li
+						a(href="#req") Реквизиты
+					li.iconsLi
+						i(class="fa fa-vk" aria-hidden="true")
+						i(class="fa fa-instagram" aria-hidden="true")
+						i(class="fa fa-facebook" aria-hidden="true")
+			div.icons
+				i(class="fa fa-vk" aria-hidden="true")
+				i(class="fa fa-instagram" aria-hidden="true")
+				i(class="fa fa-facebook" aria-hidden="true")
+			div.phone
+				p +7 (xxx) xxx-xx-xx
+				p.p2 Часы работы с 9:00-18:00. Работаем без выходных
+				button(id="go").buttonDetails 
+					p Заказать обратный звонок
+					i(class="fa fa-phone" aria-hidden="true").iconCall
+			div.phone2(style="display: none")
+				p +7 (xxx) xxx-xx-xx
+	div.header
+		div.logotype
+			a(href="index.html")
+				img(src="", alt="Логотип")
+		div.menu
+				li
+					a(href="#top") Главная
+				li
+					a(href="#services") Услуги
+				li
+					a(href="#specOffers")
+						i(class="fa fa-vk" aria-hidden="true")
+						| Блог
+				li 
+					a(href="#reviews") Отзывы
+				li 
+					a(href="#contacts") Реквизиты
+		div.phone
+			p +7 (343) 269-32-39
+			p Часы работы с 9:00-18:00. Работаем без выходных
+			button(onClick="openWin3()") Заказать обратный звонок
+
+	div.wrapper2
+		div.header2
+			p Мы не заработаем, пока вы не сэкономите
+			p Получаем небольшое вознаграждение, пропорционально помощи оказанной вам
+		div.article2
+			div.block_head
+				p Как это работает:
+			div
+				div.block_1
+					p 1
+					div.block_1_1
+						div
+							p Sit amet magna ut est sunt tempor non qui consectetur eu aute sint ex eu.
+						div
+							p Consectetur in quis ad commodo proident sint aliqua.
+				div.block_2
+					p 2
+					div.block_2_1
+						div
+							p Magna deserunt id nostrud excepteur nulla non commodo et.
+						div
+							p Sit consectetur cupidatat nulla laborum esse proident ad aliquip eiusmod nostrud deserunt et tempor.
+				div.block_3
+					p 3
+					div.block_3_1
+						div
+							p Nostrud ullamco irure mollit eu duis nostrud adipisicing voluptate culpa.
+						div
+							p Ea commodo sit officia tempor proident incididunt eiusmod deserunt enim qui commodo.
+		div.footer2
+			div
+				p Наведи порядок и перестань платить лишние деньги
+			div
+				button.buttonDownload(onClick="openWin3()") Сделать заказ
+	div.footer
+		div.logotype1
+			a(name="req")
+			img(src="", alt="Логотип")
+		div.requisites1
+			div
+				.req1
+					p ИНН: 
+					p 0000000000
+				.req2
+					p КПП: 
+					p 000000000
+				.req3
+					p ОГРН: 
+					p 000000000000
+				.req4
+					p ОКПО: 
+					p 00000000
+			div
+				.req7
+					p БИК: 
+					p 00000000
+				.req5
+					p Расчётный счёт: 
+					p 000000000000000000000
+				.req6
+					p Банк: 
+					p ИМЯ ФИЛЛИАЛА
+				.req8
+					p Корр. счёт: 
+					p 00000000000000000000
+			div
+				.req10
+					p Телефон: 
+					p (999) 999-99-99
+				.req11
+					p Генеральный директор: 
+					p Фамилия Имя Отчество
+				.req9
+					p Юридический адрес: 
+					p 000000000, Область страны, Название города г., Название улицы ул., Номер дома., Номер кабинета 
+
+	//- Font Awesome
+	script(src="https://use.fontawesome.com/c29e12329d.js")
+	//- jQuery
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+	//- Glide JS
+	script(type="text/javascript" src="js/jquery.glide.min.js")
+	//- Bootstrap JS
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+	
+	//- script(src="js/main.js")

@@ -1,0 +1,251 @@
+@supports not (display: grid) {
+	
+	// index.html
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+	nav {
+		.container-fluid {
+			display: flex;
+			justify-content: space-between;
+			@media (max-width: 767px) {
+				display: block;
+			}
+			.navbar-header {
+				@media (max-width: 767px) {
+					width: 100%;
+					margin: 0;
+				}
+			}
+			.navbar-collapse {
+				width: auto;
+				
+			}
+			.icons {
+				display: flex;
+				width: auto;
+				
+				& > * {
+					margin: 0 10px;
+				}
+			}
+			.phone {
+				flex-direction: row;
+				@media (min-width: 768px) and (max-width: 1199px) {
+					.p1 {
+						display: none !important;
+					}
+				}
+				@media (max-width: 767px) {
+					display: none !important;
+				}
+
+				& > * {
+					margin-right: 20px;
+				}
+				p:nth-child(1) {
+					font-size: 1.8em;
+				}
+				.p2 {
+					display: none;
+				}
+				button {
+					margin: 0;
+					@media (min-width: 991px) {
+						padding: 10px 20px !important;
+					}
+					.iconCall {
+						padding: 0;
+					}
+				}
+			}
+			.phone2 {
+				@media (min-width: 768px) and (max-width: 1199px) {
+					display: none !important;
+				}
+			}
+		}
+	}
+	.logo {
+		display: flex;
+		div:nth-child(1) {
+			.p3 {
+				display: block !important;
+				color: white !important;
+				font-size: 1.5em;
+			}
+			@media (max-width: 1199px) {
+				.p4 {
+					display: block !important;
+					color: white !important;
+				font-size: 2em;
+				}
+			}
+		}
+		div:nth-child(2) {
+			display: flex;
+			align-items: center;
+		}
+		@media (max-width: 767px) {
+    		flex-direction: column;
+			div:nth-child(2) {
+				display: flex;
+				justify-content: center;
+			}
+			img { 
+				height: 200px; 
+				width: auto !important;
+			}
+		}
+	}
+	.guaranteen {
+		display: flex;
+		
+		div {
+			width: 30% !important;
+		}
+		@media (max-width: 991px) {
+			flex-wrap: wrap;
+			justify-content: center;
+			div { width: 35% !important; }
+		}
+		@media (max-width: 767px) {
+			div {
+				width: 100% !important;
+				img { width: 20% !important; }
+			}
+		}
+	}
+	.sysTema {
+		display: flex;
+		@media (max-width: 767px) {
+			flex-direction: column-reverse;
+		}
+		img {
+			width: 80% !important;
+		}
+		div {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+	.services {
+		div {
+			display: flex;
+			@media (max-width: 767px) {
+				flex-direction: column;
+			}
+			@media (min-width: 768px) and (max-width: 991px) {
+				flex-wrap: wrap;
+				justify-content: center;
+				div {
+					width: 40%;
+					.btn {
+						width: 100%;
+					}
+				}
+			}
+			@media (min-width: 568px) and (max-width: 767px) {
+				.btn {
+					align-items: flex-end;
+				}
+			}
+		}
+	}
+	.reviews {
+		div {
+			display: flex;
+			flex-direction: column;
+			div {
+				display: flex;
+				flex-direction: row;
+				@media (max-width: 767px) {
+					flex-direction: column;
+					div:nth-child(1) {
+						width: 50% !important;
+					}
+				}
+				div:nth-child(1) {
+					width: 20%;
+					img {
+						width: 60% !important;
+					}
+				}
+				div:nth-child(2) {
+					width: 80%;
+				}
+			}
+		}
+	}
+	.contacts {
+		display: flex;
+		flex-direction: column;
+		div:nth-child(2) {
+			display: flex;
+			flex-direction: row;
+			@media (max-width: 767px) {
+				flex-direction: column;
+				div { margin: 30px 0 !important; }
+			}
+			div {
+				margin: 0 20px;
+			}
+		}
+	}
+	.footer {
+		display: flex;
+		flex-direction: column-reverse;
+		.requisites1 {
+			display: flex;
+			flex-direction: row;
+			@media (max-width: 767px) {
+				flex-direction: column;
+				div { width: 100% !important; }
+			}
+			& > div:nth-child(1) {
+				width: 20%;
+			}
+			& > div:nth-child(2) {
+				width: 30%;
+			}
+			& > div:nth-child(3) {
+				width: 50%;
+			}
+		}
+	}
+
+	// index2.html
+	.wrapper2 {
+		display: flex;
+		.article2 {
+			display: flex;
+			flex-direction: column;
+			div:nth-child(1) {
+			}
+			& > div:nth-child(2) {
+				display: flex;
+				& > div {
+					width: 80%;
+					& > div {
+						display: flex;
+						flex-direction: column;
+						// width: 90%;
+						div:nth-child(1) {
+							height: 70%;
+							display: flex;
+						}
+						div:nth-child(2) {
+							height: 30%;
+							display: flex;
+							justify-content: center; 
+							align-items: center;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
